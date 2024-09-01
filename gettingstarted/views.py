@@ -1,6 +1,6 @@
 from django.http import JsonResponse
 
-def company_value(request):
+def products(request):
     data = {
         "company": "Ualá",
         "products": [
@@ -10,4 +10,3 @@ def company_value(request):
         ]
     }
     return JsonResponse(data, json_dumps_params={'ensure_ascii': False})
-

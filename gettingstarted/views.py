@@ -9,5 +9,5 @@ def company_value(request):
             {"productName": "Plazo Fijo", "value": "TNA 30 días: 37% | TNA 90 días: 40% | TNA 180 días: 45% | TEA 30 días: 43.98% | TEA 90 días: 46.45% | TEA 180 días: 50.14%"}
         ]
     }
-    return JsonResponse(data)
+    return JsonResponse(data, json_dumps_params={'ensure_ascii': False})
 

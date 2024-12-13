@@ -10,7 +10,7 @@ def products(request):
         "products": [
             {"productName": "Cuenta Remunerada", "value": "40%"},
             {"productName": "Fondo Común de Inversión", "value": "37.42%"},
-            {"productName": "Plazo Fijo", "value": "TNA 30 días: 35% | TNA 90 días: 38% | TNA 180 días: 45% | TNA 365 días: 50%"}
+            {"productName": "Plazo Fijo", "value": "TNA 30 días: 33% | TNA 90 días: 38% | TNA 180 días: 45% | TNA 365 días: 50%"}
         ]
     }
     return JsonResponse(data, json_dumps_params={'ensure_ascii': False})

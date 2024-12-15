@@ -134,6 +134,9 @@ if IS_HEROKU_APP:
         'PASSWORD': 'ggcjpkro4oduudnq',
         'HOST': 'bqmayq5x95g1sgr9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
         'PORT': 3306,
+        'OPTIONS': {
+            'init_command': 'SET sql_mode=STRICT_TRANS_TABLES',  # Adjust mode as needed
+        },
     }
 }
 else:

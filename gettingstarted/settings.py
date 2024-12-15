@@ -127,13 +127,15 @@ if IS_HEROKU_APP:
     # https://devcenter.heroku.com/articles/provisioning-heroku-postgres#application-config-vars
     # https://github.com/jazzband/dj-database-url
     DATABASES = {
-        "default": dj_database_url.config(
-            env="JAWSDB_URL",
-            conn_max_age=600,
-            conn_health_checks=True,
-            ssl_require=True,
-        ),
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'gyc7atajpt3ouo7e',
+        'USER': 'adhnoz2igd1eflu5',
+        'PASSWORD': 'ggcjpkro4oduudnq',
+        'HOST': 'bqmayq5x95g1sgr9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+        'PORT': 3306,
     }
+}
 else:
     # When running locally in development or in CI, a sqlite database file will be used instead
     # to simplify initial setup. Longer term it's recommended to use Postgres locally too.
